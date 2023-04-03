@@ -1,0 +1,45 @@
+package main
+
+import "fmt"
+
+func main() {
+	var s1 string
+	var s2 string
+	fmt.Println("Digite uma string")
+	fmt.Scan(&s1)
+	fmt.Println("Digite outra string")
+	fmt.Scan(&s2)
+	s3 := s1 + " " + s2
+	fmt.Println(s3)
+}
+=======================================
+package main
+
+import "fmt"
+
+func main() {
+	var s1 string
+	fmt.Println("Digite uma string")
+	fmt.Scan(&s1)
+	s2 := len(s1)
+	fmt.Printf("Numero de caracteres: %d", s2)
+
+}
+===========================================
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	var s1 string
+	fmt.Println("Digite uma string")
+	fmt.Scan(&s1)
+	var s2 string
+	fmt.Println("Digite um caractere")
+	fmt.Scan(&s2)
+	s3 := (strings.Index(s1, s2))
+	fmt.Printf("Esse caractere aparece: %d", len(s3))
+}
